@@ -10,9 +10,9 @@ var chooseUp;
 var chooseLow;
 
 
-var char = "!@#$%^&*()_+[]";
+var char = "!@#$%^&*()_+[]".split("");
 
-var ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 var abc = "abcdefghijklmnopqrstuvwxyz".split("");
 
