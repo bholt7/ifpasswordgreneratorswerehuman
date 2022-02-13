@@ -37,6 +37,8 @@ function generatePassword() {
 
     alert("Password must be between 8-128 characters");
 
+    // create my confirms in the else.
+
   } else {
 
     var chooseNumber = confirm("Would you like to include a number in your password ?");
@@ -45,6 +47,8 @@ function generatePassword() {
     var chooseLow = confirm("Would you like to include lowercase letters ?");
 
   };
+
+  // added multiple if else statements to create user variation within password
   
   if (chooseNumber && specialCharacter && chooseUp && chooseLow) {
 
@@ -109,6 +113,9 @@ function generatePassword() {
   };
 
   var pswrd = "";
+
+  // created my for loop, here i had to use the math.floor(Math.random) method in order for the password to generate random values based on the
+  // users choices.
 
   for(var i = 0; i <= word; i++) {
 
