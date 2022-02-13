@@ -9,57 +9,16 @@ var specialCharacter;
 var chooseUp;
 var chooseLow;
 
-var char = ["!",
-"#",
-"$",
-"%",
-"^",
-"&",
-"*",
-"+",
-"-"<
-"()",
-"[]",
-];
 
-var abc = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+var char = "!@#$%^&*()_+[]";
 
-var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+var abc = "abcdefghijklmnopqrstuvwxyz".split("");
+
+var numeric = "123456789".split;
 
 var picks;
-
-var toUp = function(a) {
-  return a .toUpperCase
-};
-
-var ABC = abc.map(toUp);
 
 // Here I had to create a function that will be called on in the function below.
 
@@ -151,10 +110,21 @@ function generatePassword() {
 
   var pswrd = "";
 
-  for(var i = 0; i < word; i++) {
+  for(var i = 0; i <= word; i++) {
 
-    var decision = Math.floor(Math.random () * picks.length);
+  picks [
+    Math.floor(Math.random() * picks.length)
+  ];
+
+  pswrd += picks [
+    Math.floor(Math.random() * picks.length)
+  ];
+
   }
+
+  return pswrd
+
+
 
   
 }
