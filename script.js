@@ -16,7 +16,7 @@ var ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 var abc = "abcdefghijklmnopqrstuvwxyz".split("");
 
-var numeric = "123456789".split;
+var numeric = "123456789".split("");
 
 var picks;
 
@@ -116,19 +116,20 @@ function generatePassword() {
 
   // created my for loop, here i had to use the math.floor(Math.random) method in order for the password to generate random values based on the
   // users choices.
+  console.log(picks)
 
   for(var i = 0; i <= word; i++) {
 
-  picks [
-    Math.floor(Math.random() * picks.length)
-  ];
+  // picks [
+  //   Math.floor(Math.random() * picks.length)
+  // ];
 
   pswrd += picks [
     Math.floor(Math.random() * picks.length)
   ];
 
   }
-
+ console.log(pswrd)
   return pswrd
 
 
@@ -145,6 +146,7 @@ function generatePassword() {
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  console.log(password)
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
