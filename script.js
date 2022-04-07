@@ -120,9 +120,6 @@ function generatePassword() {
 
   for(var i = 0; i <= word; i++) {
 
-  // picks [
-  //   Math.floor(Math.random() * picks.length)
-  // ];
 
   pswrd += picks [
     Math.floor(Math.random() * picks.length)
